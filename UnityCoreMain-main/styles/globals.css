@@ -1,0 +1,625 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("https://static1.squarespace.com/static/57bb1b5e59cc68374d95e818/t/6080799bbb54e72b94e23c28/1619032475894/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: Space Grotesk !important;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.mob_size {
+  font-size: 20px;
+}
+.nav-icon:hover {
+  color: #6717ce;
+}
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.move-center {
+  @apply flex justify-center items-center relative;
+}
+
+.input_style {
+  border-radius: 8px;
+  border: 1px solid #dfe8f9;
+  background: #fff;
+}
+
+.image_polygon {
+  background-image: url(/public/image.png);
+}
+.search-input {
+  /* Set a background color for the input */
+  background-color: #ffffff;
+  /* Set the position of the background image to the left side */
+  background-position: 10px center;
+  /* Set the padding to accommodate the search icon */
+  padding-left: 35px;
+  /* Add some border and border-radius to style the input */
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  /* Add any other styles you want for the input */
+}
+
+/* Style the ::before pseudo-element to insert the search icon */
+.search-input::before {
+  /* Set the content property to insert the search icon */
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23353e48" viewBox="0 0 1024 1024"><path d="M964.8 889.6l-206.4-204.8c51.2-61.44 86.4-145.92 86.4-235.52 0-194.56-153.6-353.28-345.6-353.28C230.4 96 76.8 254.72 76.8 448s153.6 352 345.6 352c89.6 0 174.08-35.2 235.52-89.6l204.8 204.8c19.2 19.2 51.2 19.2 70.4 0s19.2-51.2 0-70.4zM422.4 678.4C313.6 678.4 224 588.8 224 480s89.6-198.4 198.4-198.4c108.8 0 198.4 89.6 198.4 198.4s-89.6 198.4-198.4 198.4z"/></svg>');
+  /* Set the position of the icon within the input field */
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* 
+  .head_text {
+    @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  } */
+.colour {
+  color: #62677b;
+}
+
+.menu-mol {
+  border-radius: 100px;
+  border: 1px solid #dfe8f9;
+  background: rgba(186, 181, 181, 0.21);
+  width: 326px;
+  height: 30px;
+  flex-shrink: 0;
+  width: 100%;
+}
+.col {
+  background-color: #5d22d5;
+}
+
+.btnTab {
+  border-radius: 48px;
+  height: 40px;
+  background: #651bd0;
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0px 4px 8px 0px rgba(21, 20, 91, 0.08);
+}
+
+.btnTab2 {
+  border-radius: 48px;
+  height: 35px;
+  background: #651bd0;
+  width: 265px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0px 4px 8px 0px rgba(21, 20, 91, 0.08);
+}
+
+.custom-display-none {
+  display: none;
+}
+
+.mid_show {
+  display: none;
+}
+.custom {
+  font-family: Space Grotesk;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.scustom {
+  font-family: Space Grotesk;
+  font-size: 13px;
+  line-height: 61px;
+  letter-spacing: 0em;
+  font-weight: 600;
+  text-align: left;
+}
+
+.lineH {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: linear-gradient(to left, #296ffa, #5d22d5);
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.butn {
+  background: linear-gradient(to left, #296ffa, #5d22d5);
+  height: 50px;
+  width: 450px;
+  border-radius: 10px;
+  color: #fff;
+}
+.Connectbtn {
+  background: linear-gradient(to left, #296ffa, #5d22d5);
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.error-alert {
+  background-color: linear-gradient(to left, #296ffa, #5d22d5) !important;
+  border-radius: 200px;
+}
+
+.back {
+  background-image: linear-gradient(rgb(30, 32, 45) 50%, #ffff 50%);
+  font-family: Space Grotesk !important;
+  color: #ffff;
+  font-size: 20px;
+}
+
+.market {
+  background-image: linear-gradient(rgb(30, 32, 45) 50%, #ffff 50%);
+  font-family: Space Grotesk !important;
+  color: #ffff;
+  font-size: 20px;
+}
+
+.nav {
+  background-image: linear-gradient(to right, #296ffa, #5d22d5);
+  font-family: Space Grotesk !important;
+  font-size: 20px;
+}
+
+.all-font {
+  font-family: Space Grotesk !important;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.empty-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebg {
+  border: 1px solid #dfe8f9;
+  background: #fff;
+}
+
+/* .mainbg{
+  background: #F9F9F9;
+} */
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.mainw {
+  /* flex-grow: 1; */
+  background: #f9f9f9;
+  /* width: calc(100vw - 2000px); */
+}
+
+.logostyle {
+  color: #102f43;
+  font-family: Space Grotesk;
+  font-size: 21.949px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.protocol {
+  color: #657795;
+  font-family: Space Grotesk;
+  font-size: 13.565px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.mob_show {
+  display: none;
+}
+
+.smallP {
+  color: #657795;
+}
+
+.smallPP {
+  color: #657795;
+  flex-shrink: 1;
+  white-space: nowrap;
+}
+.smallPwhite {
+  color: #fff;
+}
+.family {
+  font-family: Space Grotesk;
+}
+
+.responsive-text-d {
+  font-size: 20px;
+}
+.earninginfo {
+  border-radius: 12px;
+  flex-shrink: 0;
+  padding: 20px;
+  position: relative;
+  background: linear-gradient(135deg, #6717ce 0%, #2871fb 100%);
+}
+
+.earninginfo4 {
+  flex-shrink: 0;
+  /* padding: 20px; */
+  position: relative;
+}
+
+.learn {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 13, 125, 0.48);
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.buttonp {
+  margin-top: 10px;
+}
+.clicked {
+  border-radius: 10px;
+  background: #f7f7f8;
+  height: 40px;
+  width: 100px;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Adjust the z-index value if needed to ensure it's above other content */
+}
+
+.tabswitch {
+  border-radius: 100px;
+  border: 1px solid #dfe8f9;
+  background: #fff;
+  width: 294px;
+  height: 59px;
+  padding: 8px;
+  flex-shrink: 0;
+}
+.tabswitch2 {
+  border-radius: 100px;
+  border: 1px solid #dfe8f9;
+  background: #fff;
+  width: 430px;
+  height: 49px;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 1440px) and (max-width: 1535px) {
+  .sideheight {
+    height: 1138px;
+  }
+  .mob_show {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 90000px) {
+  .sidewidth {
+    width: 100%;
+  }
+  .mob_show {
+    display: none;
+  }
+
+  .bgGap {
+    gap: 10rem;
+  }
+
+  .sidepadding {
+    padding: 2rem;
+    gap: 8rem;
+  }
+
+  .mainw {
+    width: calc(100vw - 200px);
+    /* Adjust the width based on your sidebar width */
+  }
+
+  .earninginfo {
+    /* padding-left: 10rem; */
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  .navsize {
+    font-size: 11px;
+  }
+
+  .navsetmol {
+    display: none;
+  }
+
+  .collo {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    /* max-width: 10px;
+    padding-left: 200px; */
+  }
+
+  .box_size {
+    width: 500px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1800px) {
+  .box_size {
+    width: 410px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 349px) {
+  .box_size {
+    max-width: 300px;
+    justify-content: space-between;
+    display: flex;
+    gap: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+  .box_size {
+    max-width: 320px;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 699px) {
+  .box_size {
+    max-width: 400px;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 50px) and (max-width: 600px) {
+  .mob_hid {
+    display: none;
+  }
+  .mob_size {
+    font-size: 10px;
+    /* height: 314px; */
+  }
+  .img_size {
+    height: 20px;
+    width: 20px;
+  }
+  .butn {
+    background: linear-gradient(to left, #296ffa, #5d22d5);
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+  }
+  .tabswitch2 {
+    border-radius: 100px;
+    border: 1px solid #dfe8f9;
+    background: #fff;
+    width: 300px;
+    height: 49px;
+    padding: 8px;
+    flex-shrink: 0;
+  }
+  .p-text {
+    color: #4caf50;
+    font-family: Space Grotesk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .btnTab_mob {
+    display: flex;
+    width: 80px;
+    padding-left: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+    border-radius: 48px;
+    background: #651bd0;
+    box-shadow: 0px 4px 8px 0px rgba(21, 20, 91, 0.08);
+  }
+  .tabswitch5 {
+    border-radius: 100px;
+    border: 1px solid #dfe8f9;
+    background: #fff;
+    width: 200px;
+    height: 45px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add the box shadow here */
+  }
+
+  .responsive-image {
+    height: 30px; /* Further reduce the height */
+    width: 30px; /* Further reduce the width */
+  }
+  .responsive-text {
+    font-size: 10px;
+  }
+
+  .mob_show {
+    display: flex;
+  }
+  .mainww {
+    flex-grow: 1;
+    background: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    /* width: calc(100% - 2000px); */
+  }
+  .responsive-table {
+    width: 100%;
+  }
+  .mol_box_style {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 10px;
+    border: 1px solid #dfe8f9;
+    background: #fff;
+    flex-shrink: 0;
+    position: relative;
+  }
+}
+/* styles.css or your custom CSS file */
+@media (min-width: 500px) and (max-width: 599px) {
+  .table-container {
+    max-width: 530px;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+  .table-container {
+    max-width: 360px;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* For screen sizes between 300px and 500px */
+@media (min-width: 300px) and (max-width: 500px) {
+  .table-container {
+    max-width: 100%; /* Adjust the width percentage as needed */
+    overflow-x: auto;
+  }
+
+  .custom-table {
+    width: 40%;
+    border-collapse: collapse;
+  }
+
+  .custom-table1 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .custom-table th,
+  .custom-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+
+  .custom-table th:last-child,
+  .custom-table td:last-child {
+    border-right: none;
+  }
+
+  /* Custom CSS */
+  .custom-table1 {
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  .custom-cell {
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: right; /* or "right" if you want the text to align right */
+    border-bottom: 1px solid #e0e0e0; /* Optional: Add bottom border to cells */
+    width: 57.7px; /* Set the width of each cell as needed */
+    font-size: 9px;
+  }
+
+  .custom-header {
+    font-weight: bold;
+    /* Optional: Set different background color for header cells */
+    /* background-color: #f3f3f3; */
+  }
+
+  .custom-header1 {
+    /* font-weight: bold; */
+    /* Optional: Set different background color for header cells */
+    background: #f3f3f3;
+  }
+
+  .custom-cell:last-child {
+    border-right: none; /* Optional: Remove right border from last cell in each row */
+  }
+
+  .table-parent {
+    overflow-x: auto;
+  }
+  .mol_btn {
+    display: flex;
+    width: 50px;
+    height: 20px;
+    padding: 12px 24px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 48px;
+    background: #651bd0;
+    box-shadow: 0px 4px 8px 0px rgba(21, 20, 91, 0.08) inset;
+  }
+  .mol_btn1 {
+    display: flex;
+    width: 56px;
+    height: 20px;
+    padding: 12px 24px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 48px;
+    background: #651bd0;
+    box-shadow: 0px 4px 8px 0px rgba(21, 20, 91, 0.08) inset;
+  }
+  /* Add more custom styles as needed */
+}
